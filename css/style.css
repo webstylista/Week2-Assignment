@@ -1,8 +1,8 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
+Project Name: Relaxr Landing Page
+Client: Relaxr
+Author: Natasha Haron
+Developer @GA in Melbourne
 */
 
 
@@ -46,12 +46,50 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
-     color: #000;
-     font-size: 12px;
-     line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
-     background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
-      background-size: cover;
+    margin: 0 auto;
+    background-color: #ddd;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size:24px;
+    font-weight:800;
+    display: block;
+    float:left;
+}
+
+h2 {
+    padding: 100px 0 60px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h3 {
+  color: #033048;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.button {
+    background-color: #f9e42e;
+    border-radius: 5px;
+    padding: 10px 50px;
+}
+
+a:hover.button {
+  opacity: 0.9;
+}
+
+a.button {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
 }
 
 
@@ -62,23 +100,118 @@ body {
 /* Center the container */
 #container {
   width: 100%;
-  margin: auto;
-  height: 500px;
+  margin: 0 auto;
+  max-width: 800px;
 
 }
 
 header {
+  background: url(../images/header_bg.jpg) no-repeat center top #033048;
+  background-size: cover;
+  height: 500px;
+  padding: 10px 50px;
+  text-align: center;
+}
 
+section {
+  background-color: #f0efef;
+  padding: 30px 50px;
+}
+
+section.testimonial {
+  background: url(../images/testimonial_bg.jpg) no-repeat center top #033048;
+  background-size: cover;
+  padding:
+}
+
+aside.cta {
+  background-color: #f9e42e;
+  margin: 0 auto;
+  padding: 30px 50px;
+  text-align: center;
 }
 
 footer {
+  margin: 0 auto;
+  background-color: #606161;
+  padding: 30px 50px;
+  text-align: center;
+}
 
+footer p {
+  font-size: 9px;
+  font-weight: 600;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
+.benefits {
+  width: 50%;
+  color: #121212;
+}
+
+.testimonial blockquote {
+  margin: 0 auto;
+  padding: 30px;
+  width: 55%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+blockquote .quote {
+  font-weight: 600;
+  font-style: normal;
+  display: block;
+}
+
+.button.sign-up {
+  background: #033048;
+}
+
+a.sign-up {
+  color: #fff;
+}
+
+footer .logo {
+  color: #f9e42e;
+  text-align: center;
+  float: none;
+}
+
+ul {
+  padding: 16px 0;
+}
+
+ul.social li {
+  list-style: none;
+  display: inline;
+  padding: 0 25px 0 0;
+
+}
+
+li:last-child {
+  padding: 0;
+}
+
+img.social-icon {
+  height: 22px;
+  width: auto;
+}
 
 
+@media screen and (max-width:480px) {
 
+  .benefits {
+    width: 100%;
+  }
+
+  .testimonial blockquote {
+    width: 100%;
+  }
+
+}
